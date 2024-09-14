@@ -161,7 +161,6 @@ PRODUCT_COPY_FILES += \
 
 # Overlays
 PRODUCT_PACKAGES += \
-    CarrierConfigOverlayRuby \
     FrameworksResOverlayRuby \
     FrameworksResOverlayRubyPlus \
     FrameworksResOverlayRubyProPlus \
