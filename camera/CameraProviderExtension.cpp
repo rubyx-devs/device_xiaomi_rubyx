@@ -118,6 +118,10 @@ bool supportsTorchStrengthControlExt() {
     return max >= 1;
 }
 
+bool supportsSetTorchModeExt() {
+    return false;
+}
+
 int32_t getTorchDefaultStrengthLevelExt() {
     int32_t max = getTorchMaxStrengthLevelExt();
     return clampTorchLevel(6, max);
