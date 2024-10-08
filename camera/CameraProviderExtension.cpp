@@ -164,3 +164,8 @@ void setTorchStrengthLevelExt(int32_t torchStrength, bool enabled) {
         ALOGW("Torch enable failed (%d): %s", -rc, strerror(-rc));
     }
 }
+
+void setTorchModeExt(bool enabled) {
+    int32_t strength = getTorchDefaultStrengthLevelExt();
+    setTorchStrengthLevelExt(enabled ? strength : 0);
+}
