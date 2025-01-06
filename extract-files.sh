@@ -128,7 +128,7 @@ function blob_fixup {
             ;;
         system_ext/lib64/libsink.so)
             [ "$2" = "" ] && return 0
-            grep -q "libshim_sink.so" "${2}" || "${PATCHELF}" --add-needed "libshim_sink.so" "${2}"
+            grep -q "libaudioclient_shim" "${2}" || "${PATCHELF}" --add-needed "libaudioclient_shim.so" "${2}"
             ;;
         system_ext/lib64/libsource.so)
             [ "$2" = "" ] && return 0
