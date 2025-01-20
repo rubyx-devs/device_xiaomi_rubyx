@@ -26,3 +26,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildFingerprint=Redmi/ruby_global/ruby:14/UP1A.230620.001/V816.0.13.0.UMOMIXM:user/release-keys \
     SystemName=ruby_global \
     SystemDevice=ruby
+
+# Build OkGoogle
+PRODUCT_HOTWORD_BUILD := false

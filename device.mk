@@ -378,3 +378,13 @@ PRODUCT_COPY_FILES += \
 # Inherit the proprietary files
 $(call inherit-product-if-exists, device/xiaomi/miuicamera-rubyx/device.mk)
 $(call inherit-product, vendor/xiaomi/rubyx/rubyx-vendor.mk)
+
+# HotWordEnrollment (Ok Google)
+ifeq ($(PRODUCT_HOTWORD_BUILD),true)
+PRODUCT_COPY_FILES += \
+$(DEVICE_PATH)/configs/permissions/privapp-permissions-hotword.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-hotword.xml \
+$(DEVICE_PATH)/configs/permissions/com.android.hotwordenrollment.common.util.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.hotwordenrollment.common.util.xml \
+vendor/xiaomi/rubyx/proprietary/product/priv-app/HotwordEnrollmentOKGoogleRISCV/HotwordEnrollmentOKGoogleRISCV.apk:$(TARGET_COPY_OUT_PRODUCT)/priv-app/HotwordEnrollmentOKGoogleRISCV/HotwordEnrollmentOKGoogleRISCV.apk \
+vendor/xiaomi/rubyx/proprietary/product/priv-app/HotwordEnrollmentOKGoogleRISCV/HotwordEnrollmentXGoogleRISCV.apk:$(TARGET_COPY_OUT_PRODUCT)/priv-app/HotwordEnrollmentOKGoogleRISCV/HotwordEnrollmentXGoogleRISCV.apk \
+vendor/xiaomi/rubyx/proprietary/system_ext/framework/com.android.hotwordenrollment.common.util.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/com.android.hotwordenrollment.common.util.jar
+endif
