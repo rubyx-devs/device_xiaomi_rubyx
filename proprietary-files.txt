@@ -1373,11 +1373,6 @@ vendor/lib64/hw/gps.default.so
 vendor/lib64/libDR.so
 vendor/lib64/libmnl.so
 
-# Hotword
--product/priv-app/HotwordEnrollmentOKGoogleRISCV/HotwordEnrollmentOKGoogleRISCV.apk
--product/priv-app/HotwordEnrollmentXGoogleRISCV/HotwordEnrollmentXGoogleRISCV.apk
--system_ext/framework/com.android.hotwordenrollment.common.util.jar
-
 # IMS
 system_ext/bin/vtservice
 system_ext/etc/init/init.vtservice.rc
