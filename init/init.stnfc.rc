@@ -5,20 +5,6 @@ service vendor.st_nfc_hal_service /vendor/bin/hw/android.hardware.nfc-service.st
     user nfc
     group nfc
 
-service vendor.secure_element /vendor/bin/hw/vendor.microtrust.hardware.se@1.0-service
-    override
-    disabled
-    class late_start
-    user system
-    group nfc
-
-service vendor.mtk_secure_element_hal_service /vendor/bin/hw/android.hardware.secure_element@1.2-service-mediatek
-    override
-    disabled
-    class early_hal
-    user secure_element
-    group secure_element
-
 on early-init && property:ro.boot.hwc=CN
     setprop persist.vendor.nfc.config_file_name /vendor/etc/st21nfc_conf_${ro.boot.product.hardware.sku}.txt
     setprop ro.boot.product.vendor.sku nfc
@@ -32,5 +18,3 @@ on early-init && property:ro.boot.hwc=IN
 
 on boot && property:ro.boot.product.vendor.sku=nfc
     enable vendor.st_nfc_hal_service
-    enable vendor.secure_element
-    enable vendor.mtk_secure_element_hal_service

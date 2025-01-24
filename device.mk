@@ -159,7 +159,6 @@ PRODUCT_PACKAGES += \
     android.hardware.nfc-service.st \
     com.android.nfc_extras \
     NfcNci \
-    SecureElement \
     Tag
 
 PRODUCT_COPY_FILES += \
