@@ -90,4 +90,7 @@
     
     <!-- Whether to play turbulence noise after clicking the play button -->
     <bool name="config_turbulenceNoise">false</bool>
+    
+    <!-- Whether usage of the proximity sensor during doze is supported -->
+    <bool name="doze_proximity_sensor_supported">false</bool>
 </resources>
