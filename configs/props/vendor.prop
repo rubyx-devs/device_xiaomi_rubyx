@@ -244,6 +244,7 @@ persist.vendor.radio.mtk_dsbp_support=2
 persist.vendor.radio.mtk_ps2_rat=N/L/W/G
 persist.vendor.radio.mtk_ps3_rat=G
 persist.vendor.radio.smart.data.switch=1
+persist.vendor.wfc.cnop_vowifi=1
 ro.telephony.default_network=33,33,33,33
 ro.telephony.iwlan_operation_mode=AP-assisted
 ro.vendor.md_prop_ver=1
