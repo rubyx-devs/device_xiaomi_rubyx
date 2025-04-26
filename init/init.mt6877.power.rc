@@ -40,17 +40,9 @@ on enable-low-power
     # Runtime FS tuning
     # we should adjust the setting upon boot_complete for runtime performance
     write /sys/block/mmcblk0/queue/iostats 1
-    write /sys/block/mmcblk0/queue/read_ahead_kb 512
     write /sys/block/mmcblk0/queue/nr_requests 128
     write /sys/block/sdc/queue/iostats 1
-    write /sys/block/sdc/queue/read_ahead_kb 512
     write /sys/block/sdc/queue/nr_requests 128
-    write /sys/block/dm-0/queue/read_ahead_kb 128
-    write /sys/block/dm-1/queue/read_ahead_kb 128
-    write /sys/block/dm-2/queue/read_ahead_kb 128
-    write /sys/block/dm-3/queue/read_ahead_kb 128
-    write /sys/block/dm-4/queue/read_ahead_kb 128
-    write /sys/block/dm-5/queue/read_ahead_kb 128
 
     write /proc/cpufreq/cpufreq_sched_disable 0
     write /proc/sys/kernel/sched_migration_cost_ns 200000
