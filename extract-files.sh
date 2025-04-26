@@ -114,13 +114,13 @@ function blob_fixup {
             ;;
         vendor/lib*/hw/vendor.mediatek.hardware.pq@2.14-impl.so)
             [ "$2" = "" ] && return 0
-            "${PATCHELF}" --replace-needed "libutils.so" "libutils-v32.so" "${2}"
+            "${PATCHELF}" --replace-needed "libutils.so" "libutils-v33.so" "${2}"
             "${PATCHELF}" --replace-needed "libsensorndkbridge.so" "android.hardware.sensors@1.0-convert-shared.so" "${2}"
             ;;
         vendor/lib*/libmtkcam_stdutils.so|\
         vendor/lib64/hw/android.hardware.camera.provider@2.6-impl-mediatek.so)
             [ "$2" = "" ] && return 0
-            "${PATCHELF}" --replace-needed "libutils.so" "libutils-v32.so" "${2}"
+            "${PATCHELF}" --replace-needed "libutils.so" "libutils-v33.so" "${2}"
             ;;
         vendor/lib*/libdlbdsservice.so|\
         vendor/lib*/soundfx/libswdap.so)
