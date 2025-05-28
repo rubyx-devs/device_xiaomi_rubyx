@@ -1065,7 +1065,10 @@ vendor/lib64/libmialgo_aio_seg.so
 vendor/lib64/libmialgo_rfs.so
 vendor/lib64/libmialgo_sd.so
 vendor/lib64/libmialgo_utils.so
-vendor/lib64/libmialgoengine.so;DISABLE_CHECKELF
+
+# Camera (Algo Engine) - from gale_global 15 AP3A.240905.015.A2 OS2.0.2.0.VGPMIXM release-keys
+vendor/lib64/libmialgoengine.so|0e1c70fb6220154096a9e8c842d20485f4d477a8;DISABLE_CHECKELF
+
 vendor/lib64/libmiphone_capture_bokeh.so
 vendor/lib64/libmiphone_preview_bokeh.so
 vendor/lib64/libmpbase.so
