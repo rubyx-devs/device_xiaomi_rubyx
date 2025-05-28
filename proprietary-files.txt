@@ -1420,7 +1420,9 @@ vendor/etc/init/microtrust.bp_kmsetkey_ca.rc
 
 # Ladder
 vendor/lib/libladder.so
-vendor/lib64/libladder.so
+
+# Display (Thread unwinding) - from duchamp
+vendor/lib64/libladder.so|db8bdb58e6f4a4250bb5f471fbe8ea6a12897c22
 
 # Tether Offload
 vendor/bin/hw/tetheroffloadservice
