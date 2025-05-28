@@ -1381,7 +1381,10 @@ vendor/lib64/libmnl.so
 # IMS
 system_ext/bin/vtservice
 system_ext/etc/init/init.vtservice.rc
--system_ext/priv-app/ImsService/ImsService.apk
+
+# Patched ImsService.apk from ruby-user 14 OS2.0.2.0.UMOMIXM release-key
+-system_ext/priv-app/ImsService/ImsService.apk|9c7fa07d46c9459230b339ceab1598c47fc87943
+
 -system_ext/framework/mediatek-common.jar:framework/mediatek-common.jar
 -system_ext/framework/mediatek-framework.jar:framework/mediatek-framework.jar
 -system_ext/framework/mediatek-ims-base.jar:framework/mediatek-ims-base.jar
