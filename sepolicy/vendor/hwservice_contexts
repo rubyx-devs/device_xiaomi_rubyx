@@ -11,6 +11,9 @@ com.fingerprints.extension::IFingerprintSensorTest                              
 com.fingerprints.extension::IFingerprintCalibration                                  u:object_r:vendor_hal_fingerprint_hwservice_xiaomi:s0
 com.fingerprints.extension::IFingerprintOptical                                      u:object_r:vendor_hal_fingerprint_hwservice_xiaomi:s0
 
+# Camera Post Processing
+vendor.xiaomi.hardware.campostproc::IMiPostProcService                        u:object_r:vendor_hal_camera_campostproc_hwservice_xiaomi:s0
+
 # Fido
 vendor.xiaomi.hardware.mfidoca::IFidoService                                  u:object_r:hal_mfidoca_hwservice:s0
 
