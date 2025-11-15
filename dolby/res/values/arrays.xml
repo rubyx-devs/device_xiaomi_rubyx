@@ -69,4 +69,19 @@
         <item>3</item>
     </string-array>
 
+    <integer-array name="dolby_dialogue_steps">
+        <item>0</item>
+        <item>2</item>
+        <item>6</item>
+        <item>9</item>
+        <item>12</item>
+    </integer-array>
+
+    <integer-array name="dolby_stereo_steps">
+        <item>4</item>
+        <item>24</item>
+        <item>44</item>
+        <item>64</item>
+    </integer-array>
+
 </resources>
