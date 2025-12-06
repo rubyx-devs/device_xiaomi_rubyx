@@ -93,7 +93,8 @@ PRODUCT_PACKAGES += \
     android.hardware.ir-service.example
 
 # DeviceAsWebcam
-TARGET_BUILD_DEVICE_AS_WEBCAM := true
+PRODUCT_PACKAGES += \
+    DeviceAsWebcam
 
 # Dex
 WITH_DEXPREOPT := true
