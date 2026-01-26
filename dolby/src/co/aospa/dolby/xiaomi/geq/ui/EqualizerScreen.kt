@@ -8,11 +8,12 @@ package co.aospa.dolby.xiaomi.geq.ui
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.fillMaxHeight
-import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.wrapContentHeight
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.Surface
+import androidx.compose.material3.Card
+import androidx.compose.material3.CardDefaults
+import androidx.compose.material3.surfaceColorAtElevation
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
@@ -24,16 +25,19 @@ fun EqualizerScreen(
     modifier: Modifier = Modifier
 ) {
     MaterialTheme {
-        Surface(
+        Card(
             modifier = Modifier
-                .fillMaxSize()
+                .fillMaxWidth()
+                .wrapContentHeight()
                 .padding(SettingsDimension.itemPadding)
                 .then(modifier),
-            color = MaterialTheme.colorScheme.background
+            colors = CardDefaults.cardColors(
+                containerColor = MaterialTheme.colorScheme.surfaceColorAtElevation(1.dp)
+            )
         ) {
             Column(
                 verticalArrangement = Arrangement.Top,
-                modifier = Modifier.fillMaxHeight()
+                modifier = Modifier.wrapContentHeight()
             ) {
                 PresetSelector(viewModel = viewModel)
                 EqualizerBands(viewModel = viewModel)
