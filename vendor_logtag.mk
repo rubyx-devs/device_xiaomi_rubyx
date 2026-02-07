@@ -260,4 +260,5 @@ PRODUCT_VENDOR_PROPERTIES += \
     persist.log.tag.WpfaShmAccessController=$(VENDOR_LOG_LEVEL) \
     persist.log.tag.WpfaShmReadMsgHandler=$(VENDOR_LOG_LEVEL) \
     persist.log.tag.WpfaShmSynchronizer=$(VENDOR_LOG_LEVEL) \
-    persist.log.tag.WpfaShmWriteMsgHandler=$(VENDOR_LOG_LEVEL)
+    persist.log.tag.WpfaShmWriteMsgHandler=$(VENDOR_LOG_LEVEL) \
+    persist.log.tag.hwcomposer=$(VENDOR_LOG_LEVEL)
