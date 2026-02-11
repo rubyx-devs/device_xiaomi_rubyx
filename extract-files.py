@@ -109,7 +109,6 @@ blob_fixups: blob_fixups_user_type = {
     'vendor/lib64/libeffecthal.base.so',
     'vendor/lib64/libmtkcam_grallocutils.so',
     'vendor/lib64/libmtkcam_3rdparty.vidhance.so'): blob_fixup()
-        .replace_needed('libui.so', 'libui-v34.so'),
 }
 
 module = ExtractUtilsModule(
