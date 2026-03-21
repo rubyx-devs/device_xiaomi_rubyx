@@ -305,10 +305,6 @@ vendor/lib64/libbluetooth_mtk.so
 vendor/lib64/libbluetooth_mtk_pure.so
 vendor/lib64/libbt-vendor.so
 
-# Bluetooth (A2DP)
-vendor/lib/vendor.mediatek.hardware.bluetooth.audio@2.1.so
-vendor/lib/vendor.mediatek.hardware.bluetooth.audio@2.2.so
-
 # Bluetooth (Firmware) - from a34xub-user 15 AP3A.240905.015.A2 A346MUBSBDYI1 release-keys
 vendor/firmware/soc5_0_ram_bt_1_1_hdr.bin|e9ea91f8087e092fd56da8154d467a884e1f688c
 
