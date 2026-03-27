@@ -173,9 +173,6 @@ ro.netflix.bsp_rev=MTK6877-33678-1
 persist.vendor.fingerprint.sensor_location=1080|905|200|local:4627039422300187648
 persist.vendor.fingerprint.type=side
 
-# FUSE passthrough
-persist.sys.fuse.passthrough.enable=true
-
 # Gatekeeper
 ro.hardware.gatekeeper=beanpod
 
