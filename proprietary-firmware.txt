@@ -11,7 +11,7 @@ logo.bin:logo.img;AB
 mcupm.img;AB
 md1img.img;AB
 pi_img.img;AB
-preloader_ruby.bin:preloader_raw.img;AB
+preloader_ruby.bin:preloader_raw.img;AB|17ac6d80e0759adf1e0f71e82ae85823ef6e6bb1
 scp.img;AB
 spmfw.img;AB
 sspm.img;AB
